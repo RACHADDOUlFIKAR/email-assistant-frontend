@@ -51,7 +51,7 @@ const MessageViewer: React.FC = () => {
         setTypedResponse((prev) => prev + generatedResponse.charAt(index));
         index++;
         if (index === generatedResponse.length) clearInterval(interval);
-      }, 50);
+      }, 20);
       return () => clearInterval(interval);
     } else {
       setTypedResponse('');
